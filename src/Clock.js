@@ -6,7 +6,9 @@ class Clock extends React.Component {
         super(props);
         this.state = {
             time: new Date().toLocaleTimeString(),
-            london: this.calcTime(0)
+            london: this.calcTime(0),
+            newyork: this.calcTime(-5),
+            sg: this.calcTime(8)
         };
     }
 
@@ -41,14 +43,18 @@ class Clock extends React.Component {
     tick() {
         this.setState({
           time: new Date().toLocaleTimeString(),
-          london: this.calcTime(0)
+          london: this.calcTime(0),
+          newyork: this.calcTime(-5),
+          sg: this.calcTime(8)
         });
     }
     render() {
         return (
             <p>
                 Sydney, Australia: {this.state.time}.<br></br>
-                London, United Kingdom: {this.state.london}.
+                London, England: {this.state.london}.<br></br>
+                New York, USA: {this.state.newyork}.<br></br>
+                Singapore, Singapore: {this.state.sg}
             </p>
     );
   }
