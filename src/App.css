@@ -24,19 +24,12 @@
   color: white;
 }
 
-.App-clock {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:link {
+  color: lightblue;
 }
 
-.App-link {
-  color: #61dafb;
+a:visited {
+  color: lightblue;
 }
 
 @keyframes App-logo-spin {
